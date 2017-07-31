@@ -10,15 +10,18 @@ A method that identifies similar products based on low dimensional product repre
 
 
 ### Main features of the method:
-*	Word embedding
-  - Trained a set of low dimentional Chinese word representaions based on millions of Weibo posts
-  - Complemented Bag-of-Words model by capturing syntactic and semantic meaning
+* Natural Language Processing:
+  * It is common to encounter pictures that are not "clean"
+  * As far as we know, there is no related researches on finding similar clothing based on natural language features, all of them extract     feature from pictures. 
+  * Features based on product descriptions can complement those from computer vision. The proposed method can easily incorporate with         image processing approaches to create more robust recommendation system.
 
-2.	Negative sampling: most of the item pairs are not similar
-the original item pairs cannot represent the population as the distribution differs
-because of its small size and the sampling bias generated when we built the data set (to save time and money)
-3.	EasyEnsemble
-Deal with imbalanced data, make good use of information we dropped 
+*	Word embedding:
+    * Trained a set of low dimensional Chinese word representations based on millions of Weibo posts
+    * Complemented Bag-of-Words model by capturing syntactic and semantic meaning
+* EasyEnsemble
+  * Originally from [Exploratory Undersampling for Class-Imbalance Learning](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tsmcb09.pdf)
+  * Exploit the information from majority class to deal with seriously imbalanced data
+  * It is costly to get enough labeled dataset. EasyEnsemble enabled us to “reuse”existing minority class samples to certain extent.            However, we have to make sure that the minority samples are diversified enough to represent general features of similar product pairs
 
-4.	Using NLP: 常见平台上图片不是那么标准 如同一搬论文中的那嬷干净 常常会有很多人像 街景 …等遮蔽/干扰，用NLP可以忽视/弥补这个劣势 (from practical perspective)???
-
+*Negative sampling
+    * Due to the nature of clothing market, most of the random pairs of clothes are not similar item pairs. Hence, we can treat unlabeled item pairs as negative class (not similar) with low probability labeling a pair of similar products as negative case.
