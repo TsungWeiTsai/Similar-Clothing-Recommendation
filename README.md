@@ -23,5 +23,13 @@ A method that identifies similar products based on low dimensional product repre
   * Exploit the information from majority class to deal with seriously imbalanced data
   * It is costly to get enough labeled dataset. EasyEnsemble enabled us to “reuse”existing minority class samples to certain extent.            However, we have to make sure that the minority samples are diversified enough to represent general features of similar product pairs
 
-*Negative sampling
+* Negative sampling
     * Due to the nature of clothing market, most of the random pairs of clothes are not similar item pairs. Hence, we can treat unlabeled item pairs as negative class (not similar) with low probability labeling a pair of similar products as negative case.
+    
+
+# Data
+
+# Framework
+
+# Performance
+
