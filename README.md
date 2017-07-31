@@ -17,7 +17,10 @@ A method that identifies similar products based on low dimensional product repre
 
 *	Word embedding:
     * Trained a set of low dimensional Chinese word representations based on millions of Weibo posts
-    * Complemented Bag-of-Words model by capturing syntactic and semantic meaning
+    * Complement Bag-of-Words model
+    * Strengthened the learned representation of product descriptions by using word embedding to capture semantic and syntactic
+      patterns. Word embedding can effectively measure the similarity between words.
+      
 * EasyEnsemble
   * Originally from [Exploratory Undersampling for Class-Imbalance Learning](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tsmcb09.pdf)
   * Exploit the information from majority class to deal with seriously imbalanced data
