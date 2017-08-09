@@ -4,12 +4,12 @@ A method that identifies similar products based on low dimensional product repre
 
 # Motivaiton
 
-### Possible applications/scenarios of similar clothing/product recommendaitons:
+### Applications
 *	Recommend similar products to users on the e-commerce platforms such as Taobao and Amazon based on their browsing history or explicit queries.
 * Able to conduct market/competitor analysis on a specific product and its similar products which often target same groups of customers. 
 
 
-### Main features of the method:
+### Main features of our method:
 * Natural Language Processing:
   * It is common to encounter pictures that are not "clean"
   * As far as we know, there is no related researches on finding similar clothing based on natural language features, all of them extract     feature from pictures. 
